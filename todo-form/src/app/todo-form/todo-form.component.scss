@@ -1,0 +1,52 @@
+// container
+.todo-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #f3efef;
+    border-radius: 5px;
+    font-family: "DM Sans", sans-serif;
+}
+
+// header
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+// form input
+.todo-form {
+  display: flex;
+  flex-direction: column;
+  margin: 10px ;
+}
+
+.label {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.input {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  font-size: 14px;
+}
+
+.input:focus {
+  outline: none;
+}
+
+button {
+  margin-top: 10px;
+  margin-left: 10px;
+  color: #0d0d0e;
+  background: #3774e6;
+  border-radius: 7px;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px 20px;
+  border: none;
+}
