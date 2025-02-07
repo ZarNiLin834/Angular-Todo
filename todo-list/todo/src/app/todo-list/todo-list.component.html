@@ -1,0 +1,27 @@
+<!-- container -->
+<div class="todo-container">
+    <div class="header">Todo List</div>
+    <div class="input-box">
+        <input type="text" class="todo-input" placeholder="Enter your tasks here....." [(ngModel)]="newTask">
+        <div class="btn" (click)="addTask()">Add</div>
+    </div>
+
+    <!-- todo count -->
+    
+    <div class="todo-count">
+        <span>Count : {{todoList.length}}</span>
+    </div>
+
+    <!-- task list -->
+    <ul class="task-list">
+        <li *ngFor="let todo of todoList; let i = index" [ngClass]="{'completed' : todo.completed}">
+            <input type="checkbox" [checked]="todo.completed" (click)="checkComplete(i)">
+            <span [class.completed]="todo.completed">{{todo.task}}</span>
+            <div class="trash-icon" (click)="trash(i)">
+                <i class="bi bi-trash"></i>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<!-- <app-root></app-root> -->
